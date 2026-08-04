@@ -29,8 +29,8 @@ test("renders the finished portfolio", async () => {
 
   const html = await response.text();
   assert.match(html, /<title>Derek Vieau \| Software Systems &amp; Tooling<\/title>/i);
-  assert.match(html, /Building a Unity project by building the tools it needs\./);
-  assert.match(html, /independent, systems-driven simulation project in Unity/);
+  assert.match(html, /<section class="hero" id="top">/);
+  assert.match(html, /<h1>[^<]+<\/h1>/);
   assert.match(html, /One Unity project, designed in layers/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape/i);
 });

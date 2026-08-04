@@ -11,7 +11,14 @@ if (!response.ok) {
   throw new Error(`Could not render ${previewUrl}: ${response.status}`);
 }
 
-await writeFile(resolve(clientDirectory, "index.html"), await response.text());
+// GitHub Pages serves this portfolio as a static document. Strip the Vinext
+// client router so in-page hash links remain native browser navigation.
+const renderedHtml = await response.text();
+const staticHtml = renderedHtml
+  .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "")
+  .replace(/<link\b(?=[^>]*\brel=["']modulepreload["'])[^>]*>/gi, "");
+
+await writeFile(resolve(clientDirectory, "index.html"), staticHtml);
 
 const worker = `export default {
   async fetch(request, env) {

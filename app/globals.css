@@ -20,10 +20,6 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
   background: var(--paper);
@@ -31,6 +27,13 @@ body {
   font-family: var(--sans);
   font-size: 16px;
   line-height: 1.55;
+}
+
+#top,
+#work,
+#architecture,
+#about {
+  scroll-margin-top: 24px;
 }
 
 a {
