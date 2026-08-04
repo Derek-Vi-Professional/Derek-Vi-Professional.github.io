@@ -36,9 +36,9 @@ export default function Home() {
           <h1>Building a Unity project by building the tools it needs.</h1>
           <p className="hero-intro">
             I’m Derek Vieau, a software developer building an independent,
-            systems-driven simulation project in Unity. The work here grew from
-            that project: its runtime architecture, map-building tools, and
-            asset workflows are designed to make a large project faster to
+            systems-driven simulation project in Unity. The work on display here 
+            grew from that project: its runtime architecture, map-building tools, 
+            and asset workflows are designed to make a large project faster to
             author and easier to maintain.
           </p>
           <div className="hero-actions">
@@ -102,7 +102,7 @@ export default function Home() {
       <section className="section" id="work">
         <div className="section-heading">
           <p className="eyebrow">Selected work</p>
-          <h2>Connected systems for one evolving Unity project.</h2>
+          <h2>Connected systems for an evolving project.</h2>
           <p>
             Each system grew from a concrete need in the same simulation
             project. Reusable logic stays separate from its editor or production
@@ -115,11 +115,12 @@ export default function Home() {
             <p className="project-number">01 · Simulation framework</p>
             <h3>Systems-Driven Simulation Framework</h3>
             <p className="project-lead">
-              A modular foundation for my long-term Unity simulation project,
-              combining world data, gameplay systems, and accessible editor
-              tooling without tightly coupling them together. Its spline editor
-              makes map-building quick with common-sense hotkeys and road types
-              that can be swapped without rebuilding the route.
+              A modular foundation for this project, combining world data, 
+              gameplay systems, and accessible editor tooling without tightly 
+              coupling them together. Its spline editor makes map-building quick 
+              with common-sense hotkeys and road types that can be swapped 
+              without rebuilding the route. The end result of the system is a 
+              quick-to-learn and visually accessible road creation tool.
             </p>
             <TagList items={projectTags.simulation} />
           </div>
@@ -153,7 +154,8 @@ export default function Home() {
                 />
                 <figcaption>
                   <span>03</span>
-                  Carry the result into an elevation-aware world.
+                  The splines respond smoothly to height adjustment. Next task:
+                  Hill Generation!
                 </figcaption>
               </figure>
             </div>
