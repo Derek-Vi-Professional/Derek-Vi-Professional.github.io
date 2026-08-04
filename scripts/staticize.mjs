@@ -24,8 +24,8 @@ const worker = `export default {
 
 const wranglerPath = resolve(serverDirectory, "wrangler.json");
 const wrangler = JSON.parse(await readFile(wranglerPath, "utf8"));
-wrangler.compatibility_date = "2026-08-03";
-wrangler.compatibility_flags = [];
+wrangler.compatibility_date = "2026-08-04";
+wrangler.compatibility_flags = ["no_nodejs_compat"];
 wrangler.assets = {
   directory: "../client",
   binding: "ASSETS",
