@@ -35,14 +35,14 @@ test("renders the finished portfolio", async () => {
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape/i);
 });
 
-test("explains how each tool supports the Unity project", async () => {
+test("renders each featured system and its supporting media", async () => {
   const response = await render();
   const html = await response.text();
 
-  assert.match(html, /common-sense hotkeys/);
-  assert.match(html, /road types that can be swapped/);
-  assert.match(html, /batch-create paper-like or voxel-style 3D assets/);
-  assert.match(html, /keeping pixel sizes consistent/);
-  assert.match(html, /respond to scene lighting and cast dynamic shadows/);
-  assert.match(html, /One project, built from connected systems\./);
+  assert.match(html, /<section class="section" id="work">/);
+  assert.match(html, /src="\/Spline-Graph\.png"/);
+  assert.match(html, /id="architecture"/);
+  assert.match(html, /src="\/blender-show-bounce\.mp4"/);
+  assert.match(html, /src="\/Bush-Pre-Heightmap\.png"/);
+  assert.match(html, /src="\/Bush-Heightmap\.png"/);
 });
