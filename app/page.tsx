@@ -33,11 +33,11 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-copy">
           <p className="eyebrow">C# · Unity · Tooling · Automation</p>
-          <h1>Building a Unity project by building the tools it needs.</h1>
+          <h1>Streamlining work through systems creation.</h1>
           <p className="hero-intro">
             I’m Derek Vieau, a software developer building an independent,
-            systems-driven simulation project in Unity. The work on display here 
-            grew from that project: its runtime architecture, map-building tools, 
+            systems-driven simulation game in Unity. The work on display here
+            grew from that project: its runtime architecture, map-building tools,
             and asset workflows are designed to make a large project faster to
             author and easier to maintain.
           </p>
@@ -101,26 +101,28 @@ export default function Home() {
 
       <section className="section" id="work">
         <div className="section-heading">
-          <p className="eyebrow">Selected work</p>
+          <p className="eyebrow">Featured Systems</p>
           <h2>Connected systems for an evolving project.</h2>
           <p>
-            Each system grew from a concrete need in the same simulation
-            project. Reusable logic stays separate from its editor or production
-            surface, allowing the game and its workflows to grow together.
+            Each system grew from a concrete need in the project, with
+            some intended to cut down on tedius tasks, and others as
+            core features of the game. Reusable logic stays separate from its
+            editor or production surface, allowing the game and its workflows to
+            grow together.
           </p>
         </div>
 
         <article className="project project-featured">
           <div className="project-copy">
-            <p className="project-number">01 · Simulation framework</p>
-            <h3>Systems-Driven Simulation Framework</h3>
+            <p className="project-number">01 · User-centric spline graphs</p>
+            <h3>Building Roads</h3>
             <p className="project-lead">
-              A modular foundation for this project, combining world data, 
-              gameplay systems, and accessible editor tooling without tightly 
-              coupling them together. Its spline editor makes map-building quick 
-              with common-sense hotkeys and road types that can be swapped 
-              without rebuilding the route. The end result of the system is a 
-              quick-to-learn and visually accessible road creation tool.
+              The spline editor makes route-building quick for not only me,
+              but for anyone that uses it – whether they have knowledge of
+              the system or not. with common-sense hotkeys and road types that
+              can be swapped without rebuilding the route. The end result of the
+              system is a quick-to-learn and visually accessible road creation
+              tool.
             </p>
             <TagList items={projectTags.simulation} />
           </div>
@@ -280,9 +282,13 @@ export default function Home() {
               <p>
                 To populate the Unity project efficiently, custom Blender
                 extensions batch-create paper-like or voxel-style 3D assets from
-                pixel-art PNGs while keeping pixel sizes consistent. The tools
-                also support folding workflows and configurable Unity export
-                options for merging, modifiers, baking, and preparation.
+                pixel-art PNGs while keeping pixel sizes consistent. Multiple
+                tools have been created to achieve these results, including
+                extensions that allow these objects to be folded without ruining
+                their topologies, to have pieces of them replaced on command, and
+                to change their 'skins' (source image) for quick object variety.
+                A custom batch exporter gives the user configurable Unity export
+                options for merging, modifiers, baking, and other preparations.
               </p>
               <TagList items={projectTags.blender} />
             </div>
@@ -305,7 +311,7 @@ export default function Home() {
                   alt="48 by 48 pixel-art spritesheet used to create the animated chimney model"
                 />
                 <p>
-                  The chimney in the demonstration begins as this compact
+                  The fireplace in the demonstration begins as this compact
                   48×48 spritesheet.
                 </p>
               </figcaption>
@@ -317,7 +323,7 @@ export default function Home() {
               <p className="project-number">04 · Aseprite workflow extension</p>
               <h3>Heightmaps generated directly from pixel art.</h3>
               <p>
-                A Lua extension generates heightmaps from the project’s pixel-art
+                A custom Lua extension generates heightmaps from the project’s pixel-art
                 sprites so they can respond to scene lighting and cast dynamic
                 shadows, without the extra time required to hand-paint height
                 information for every asset.
@@ -356,15 +362,16 @@ export default function Home() {
         </div>
         <div className="about-copy">
           <p>
-            This work comes from an independent Unity simulation project I’ve
+            This work comes from an independent Unity simulation game I’ve
             been developing over time. Building the game also means building the
             tools around it: faster map authoring, consistent 3D asset
             production, lighting-aware sprites, and runtime systems that remain
-            understandable as the project grows.
+            understandable as the project grows. Sometimes, that's where I find the most
+            enjoyment: in creating the systems that help to create the game.
           </p>
           <p>
             That combination of object-oriented systems, graphical editor tools,
-            and repeatable production workflows is what I’m preparing to bring
+            and repeatable production workflows is what I’m prepared to bring
             to Configura Magic and CET development.
           </p>
           <a
