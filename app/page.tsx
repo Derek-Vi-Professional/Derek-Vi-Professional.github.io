@@ -242,34 +242,30 @@ export default function Home() {
 
         <div className="project-grid">
           <article className="project-card pipeline-card">
-            <div>
+            <div className="pipeline-heading">
               <p className="project-number">02 · Editor automation</p>
               <h3>Unity Asset Pipeline Automation</h3>
-              <p>
-                Editor tools automate bulk import, configuration, and project
-                setup, applying the same rules across large groups of visual
-                assets instead of relying on repeated manual corrections.
-              </p>
               <TagList items={projectTags.pipeline} />
             </div>
-            <div className="pipeline" aria-label="Automated asset pipeline">
-              <div>
-                <span>1</span>
-                <strong>Bulk import</strong>
-                <small>Collect source assets</small>
-              </div>
-              <b aria-hidden="true">→</b>
-              <div>
-                <span>2</span>
-                <strong>Apply rules</strong>
-                <small>Configure consistently</small>
-              </div>
-              <b aria-hidden="true">→</b>
-              <div>
-                <span>3</span>
-                <strong>Ready assets</strong>
-                <small>Reduce correction work</small>
-              </div>
+            <div className="pipeline-stories" aria-label="Unity editor automation tools">
+              <section className="pipeline-story">
+                <p className="pipeline-label">Import and setup</p>
+                <h4>Consistent assets at scale</h4>
+                <p>
+                  Editor tools automate bulk import, configuration, and project
+                  setup, applying the same rules across large groups of visual
+                  assets instead of relying on repeated manual corrections.
+                </p>
+              </section>
+              <section className="pipeline-story">
+                <p className="pipeline-label">Animation authoring</p>
+                <h4>Batch animation creation</h4>
+                <p>
+                  A companion batch animation creator handles animation setup
+                  across groups of sprites, reducing the need to create and
+                  configure clips one at a time.
+                </p>
+              </section>
             </div>
           </article>
 
