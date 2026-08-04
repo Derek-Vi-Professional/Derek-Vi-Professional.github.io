@@ -261,8 +261,9 @@ export default function Home() {
                 <p className="pipeline-label">Animation authoring</p>
                 <h4>Batch animation creation</h4>
                 <p>
+                  Due to the style of the game, animation requires a tedious editor-side setup.
                   A companion batch animation creator handles animation setup
-                  across groups of sprites, reducing the need to create and
+                  across groups of 3D sprites, reducing the need to create and
                   configure clips one at a time.
                 </p>
               </section>
@@ -356,17 +357,17 @@ export default function Home() {
         </div>
         <div className="about-copy">
           <p>
-            This work comes from an independent Unity simulation game I’ve
-            been developing over time. Building the game also means building the
-            tools around it: faster map authoring, consistent 3D asset
-            production, lighting-aware sprites, and runtime systems that remain
-            understandable as the project grows. Sometimes, that's where I find the most
-            enjoyment: in creating the systems that help to create the game.
+            This work comes from an independent Unity game that I
+            work on in my free time. There are countless other (probably boring) systems
+            that I've built along the way. As the number of systems in the project increases,
+            the challenge eventually comes in the architectural decisions that keep the systems
+            connected, yet flexible enough to change as the project's needs change. The best way
+            I've found to mitigate this challenge is to harness the principles of object-oriented
+            programming and to keep the systems as decoupled and modular as possible.
           </p>
           <p>
-            That combination of object-oriented systems, graphical editor tools,
-            and repeatable production workflows is what I’m prepared to bring
-            to Configura Magic and CET development.
+            I'm fully prepared to bring this approach to a team environment, and create user-friendly
+            systems at scale.
           </p>
           <a
             className="text-link"
