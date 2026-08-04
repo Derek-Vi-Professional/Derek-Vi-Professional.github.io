@@ -33,12 +33,13 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-copy">
           <p className="eyebrow">C# · Unity · Tooling · Automation</p>
-          <h1>I build tools that make complex systems easier to use.</h1>
+          <h1>Building a Unity project by building the tools it needs.</h1>
           <p className="hero-intro">
-            I’m Derek Vieau, a software developer focused on object-oriented
-            architecture, editor extensions, and production workflows. I turn
-            data-heavy problems into maintainable systems with practical visual
-            tools.
+            I’m Derek Vieau, a software developer building an independent,
+            systems-driven simulation project in Unity. The work here grew from
+            that project: its runtime architecture, map-building tools, and
+            asset workflows are designed to make a large project faster to
+            author and easier to maintain.
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href="#work">
@@ -55,11 +56,11 @@ export default function Home() {
           </div>
         </div>
 
-        <aside className="hero-system" aria-label="Development approach">
-          <p className="diagram-label">A system designed in layers</p>
+        <aside className="hero-system" aria-label="How the Unity project fits together">
+          <p className="diagram-label">One Unity project, designed in layers</p>
           <div className="hero-node hero-node-main">
             <span>Reusable core</span>
-            <strong>Domain model</strong>
+            <strong>Simulation framework</strong>
           </div>
           <div className="hero-branches" aria-hidden="true">
             <span />
@@ -68,16 +69,16 @@ export default function Home() {
           </div>
           <div className="hero-node-row">
             <div className="hero-node">
-              <span>Authoring</span>
-              <strong>Editor tools</strong>
+              <span>World authoring</span>
+              <strong>Map tools</strong>
             </div>
             <div className="hero-node">
               <span>Runtime</span>
               <strong>Game systems</strong>
             </div>
             <div className="hero-node">
-              <span>Output</span>
-              <strong>Asset pipeline</strong>
+              <span>Production</span>
+              <strong>Asset workflows</strong>
             </div>
           </div>
         </aside>
@@ -101,10 +102,11 @@ export default function Home() {
       <section className="section" id="work">
         <div className="section-heading">
           <p className="eyebrow">Selected work</p>
-          <h2>Engineering systems, not one-off scripts.</h2>
+          <h2>Connected systems for one evolving Unity project.</h2>
           <p>
-            Each project separates reusable logic from its editor or production
-            surface, allowing the workflow to grow without rebuilding the core.
+            Each system grew from a concrete need in the same simulation
+            project. Reusable logic stays separate from its editor or production
+            surface, allowing the game and its workflows to grow together.
           </p>
         </div>
 
@@ -113,9 +115,11 @@ export default function Home() {
             <p className="project-number">01 · Simulation framework</p>
             <h3>Systems-Driven Simulation Framework</h3>
             <p className="project-lead">
-              A modular Unity foundation for a long-term simulation project,
+              A modular foundation for my long-term Unity simulation project,
               combining world data, gameplay systems, and accessible editor
-              tooling without tightly coupling them together.
+              tooling without tightly coupling them together. Its spline editor
+              makes map-building quick with common-sense hotkeys and road types
+              that can be swapped without rebuilding the route.
             </p>
             <TagList items={projectTags.simulation} />
           </div>
@@ -161,11 +165,11 @@ export default function Home() {
             <p className="project-number">Architecture detail</p>
             <h3>A composable inventory model</h3>
             <p>
-              The inventory is divided by responsibility: shared definitions
-              describe item types, a small interface defines container behavior,
-              and each stack owns its quality- and flag-aware runtime state.
-              Consumers observe changes through events instead of reaching into
-              the storage implementation.
+              The project’s inventory is divided by responsibility: shared
+              definitions describe item types, a small interface defines
+              container behavior, and each stack owns its quality- and
+              flag-aware runtime state. Consumers observe changes through events
+              instead of reaching into the storage implementation.
             </p>
             <ul className="architecture-notes">
               <li>
@@ -272,10 +276,11 @@ export default function Home() {
               <p className="project-number">03 · Blender production tooling</p>
               <h3>From pixel-art source to production-ready 3D asset.</h3>
               <p>
-                Custom Blender extensions turn pixel-art PNGs into standardized
-                paper-like or voxel-style models, support folding workflows, and
-                expose configurable Unity export options for merging, modifiers,
-                baking, and preparation.
+                To populate the Unity project efficiently, custom Blender
+                extensions batch-create paper-like or voxel-style 3D assets from
+                pixel-art PNGs while keeping pixel sizes consistent. The tools
+                also support folding workflows and configurable Unity export
+                options for merging, modifiers, baking, and preparation.
               </p>
               <TagList items={projectTags.blender} />
             </div>
@@ -310,9 +315,10 @@ export default function Home() {
               <p className="project-number">04 · Aseprite workflow extension</p>
               <h3>Heightmaps generated directly from pixel art.</h3>
               <p>
-                A Lua extension automates heightmap creation for recurring asset
-                work, keeping related source and derived images consistent while
-                removing repetitive image-processing steps.
+                A Lua extension generates heightmaps from the project’s pixel-art
+                sprites so they can respond to scene lighting and cast dynamic
+                shadows, without the extra time required to hand-paint height
+                information for every asset.
               </p>
               <TagList items={projectTags.aseprite} />
             </div>
@@ -344,19 +350,20 @@ export default function Home() {
       <section className="about" id="about">
         <div>
           <p className="eyebrow">About</p>
-          <h2>Software built for people who need to use it.</h2>
+          <h2>One project, built from connected systems.</h2>
         </div>
         <div className="about-copy">
           <p>
-            My work sits where application architecture meets practical
-            production. I enjoy defining clean responsibilities, exposing the
-            right controls, and building systems that remain understandable as
-            a project grows.
+            This work comes from an independent Unity simulation project I’ve
+            been developing over time. Building the game also means building the
+            tools around it: faster map authoring, consistent 3D asset
+            production, lighting-aware sprites, and runtime systems that remain
+            understandable as the project grows.
           </p>
           <p>
-            I’m currently preparing to apply this approach to Configura Magic
-            and CET development: configurable product systems, graphical tools,
-            and workflows that support real users over the long term.
+            That combination of object-oriented systems, graphical editor tools,
+            and repeatable production workflows is what I’m preparing to bring
+            to Configura Magic and CET development.
           </p>
           <a
             className="text-link"
