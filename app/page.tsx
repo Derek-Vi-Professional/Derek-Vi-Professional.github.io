@@ -101,14 +101,12 @@ export default function Home() {
 
       <section className="section" id="work">
         <div className="section-heading">
-          <p className="eyebrow">Featured Systems</p>
-          <h2>Connected systems for an evolving project.</h2>
+          <h2>Featured Systems</h2>
           <p>
-            Each system grew from a concrete need in the project, with
-            some intended to cut down on tedius tasks, and others as
-            core features of the game. Reusable logic stays separate from its
-            editor or production surface, allowing the game and its workflows to
-            grow together.
+            Each of the following systems grew from a concrete need in the project.
+            Some are intended to cut down on slow and repetitive tasks, and others are
+            designed as helpers in the development process. Each system is designed to
+            be user-friendly, maintainable, and reusable in other projects.
           </p>
         </div>
 
@@ -119,8 +117,8 @@ export default function Home() {
             <p className="project-lead">
               The spline editor makes route-building quick for not only me,
               but for anyone that uses it – whether they have knowledge of
-              the system or not. with common-sense hotkeys and road types that
-              can be swapped without rebuilding the route. The end result of the
+              the system or not. It features common-sense hotkeys and an
+              intuitive interface built on top of Unity's editor. The end result of the
               system is a quick-to-learn and visually accessible road creation
               tool.
             </p>
@@ -167,7 +165,7 @@ export default function Home() {
         <article className="architecture" id="architecture">
           <div className="architecture-copy">
             <p className="project-number">Architecture detail</p>
-            <h3>A composable inventory model</h3>
+            <h3>A modular inventory</h3>
             <p>
               The project’s inventory is divided by responsibility: shared
               definitions describe item types, a small interface defines
